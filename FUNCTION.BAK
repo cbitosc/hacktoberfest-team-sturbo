@@ -18,7 +18,7 @@ switch(i)
 {
 case 0: level1();
 	return;
-case 1: level1();
+case 1: level();
 	break;
 default:exit(0);
 
