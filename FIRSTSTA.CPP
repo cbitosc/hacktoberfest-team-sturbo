@@ -4,7 +4,8 @@
 #include<conio.h>
 #include<stdlib.h>
 #include<dos.h>
-//#include"level1.cpp"
+#include"leftright.cpp"
+#include"lr2.cpp"
 void main()
 {
 	int gd=DETECT,gm;
@@ -27,7 +28,6 @@ void main()
 		line(i,j+150,i-125,j+75);
 		line(i-125,j+75,i-125,j+250);
 	}
-
 	setcolor(RED);
 	for(i=0;i<=40;i+=2)
 	{
@@ -41,20 +41,91 @@ void main()
 	{
 	delay(10);
 	fillellipse(x+135,y-75-2*i,6,6);
-//	goto a;
 	}
-    //	level1();
+	getch();
+	level1();
+	cleardevice();
+		setcolor(BLUE);
+	for(i=x,j=y;i<=x+20,j<=y+20;i=i+2,j=j+2)
+	{
+		line(i+125,j-75,i+125,j-250);
+		line(i,j-150,i+125,j-75);
+		line(i+100,j+50,i-100,j-50);
+		line(i-100,j-50,i-100,j-100);
+		line(i-100,j-100,i,j-150);
+		line(i+100,j+50,i+100,j+100);
+		line(i+100,j+100,i,j+150);
+		line(i,j+150,i-125,j+75);
+		line(i-125,j+75,i-125,j+250);
+	}
+
+	setcolor(RED);
+	for(i=0;i<=40;i+=2)
+	{
+	rectangle(x+110,y-50,x+150,y-50-i);
+	rectangle(x-115,y-75,x-75,y-75-i);
+	rectangle(x-15,y+25,x+25,y+25-i);
+	rectangle(x+85,y+85,x+125,y+85-i);
+	rectangle(x-140,y+60,x-100,y+60+i);
+	}
 	for(i=0;i<=25;i++)
 	{
 	delay(10);
 	fillellipse(x+135-5*i,j-83-3*i,6,6);
-  //	goto a;
 	}
 	for(i=0;i<=25;i++)
 	{
 	delay(10);
 	fillellipse(x-4*i,y-135+2*i,6,6);
-    //	goto a;
+	}
+	getch();
+	lr2();
+	cleardevice();
+		setcolor(BLUE);
+	for(i=x,j=y;i<=x+20,j<=y+20;i=i+2,j=j+2)
+	{
+		line(i+125,j-75,i+125,j-250);
+		line(i,j-150,i+125,j-75);
+		line(i+100,j+50,i-100,j-50);
+		line(i-100,j-50,i-100,j-100);
+		line(i-100,j-100,i,j-150);
+		line(i+100,j+50,i+100,j+100);
+		line(i+100,j+100,i,j+150);
+		line(i,j+150,i-125,j+75);
+		line(i-125,j+75,i-125,j+250);
+	}
+
+	setcolor(RED);
+	for(i=0;i<=40;i+=2)
+	{
+	rectangle(x+110,y-50,x+150,y-50-i);
+	rectangle(x-115,y-75,x-75,y-75-i);
+	rectangle(x-15,y+25,x+25,y+25-i);
+	rectangle(x+85,y+85,x+125,y+85-i);
+	rectangle(x-140,y+60,x-100,y+60+i);
+	}
+   //	cleardevice();
+	for(i=x,j=y;i<=x+20,j<=y+20;i=i+2,j=j+2)
+	{
+		line(i+125,j-75,i+125,j-250);
+		line(i,j-150,i+125,j-75);
+		line(i+100,j+50,i-100,j-50);
+		line(i-100,j-50,i-100,j-100);
+		line(i-100,j-100,i,j-150);
+		line(i+100,j+50,i+100,j+100);
+		line(i+100,j+100,i,j+150);
+		line(i,j+150,i-125,j+75);
+		line(i-125,j+75,i-125,j+250);
+	}
+
+	setcolor(RED);
+	for(i=0;i<=40;i+=2)
+	{
+	rectangle(x+110,y-50,x+150,y-50-i);
+	rectangle(x-115,y-75,x-75,y-75-i);
+	rectangle(x-15,y+25,x+25,y+25-i);
+	rectangle(x+85,y+85,x+125,y+85-i);
+	rectangle(x-140,y+60,x-100,y+60+i);
 	}
 	for(i=0;i<=50;i+=3)
 	{

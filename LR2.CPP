@@ -4,8 +4,8 @@
 #include<conio.h>
 #include<stdlib.h>
 #include<dos.h>
-#include"function.cpp"
-void leftright()
+#include"func2.cpp"
+void lr2()
 {
 int gd=DETECT,gm;
 int i,j;
@@ -43,7 +43,8 @@ while(1)
 			line(a-200-4*i,b+60-3*i,a-200,b);
 			line(a-200-4*i,b-60+3*i,a-200,b);
 			}
-			func1(0);
+			func2(0);
+			return;
 		}
 		else
 		if(ch==77)
@@ -59,12 +60,13 @@ while(1)
 			line(a+200+4*i,b+60-3*i,a+200,b);
 			line(a+200+4*i,b-60+3*i,a+200,b);
 			}
-			func1(1);
+			func2(1);
+			break;
 		}
 		if(ch==13)
 		 break;
 	}
 }
 getch();
-closegraph();
+return;
 }
