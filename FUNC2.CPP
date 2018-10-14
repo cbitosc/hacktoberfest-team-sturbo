@@ -5,6 +5,7 @@
 #include<stdlib.h>
 #include<dos.h>
 #include"layout4.c"
+#include"level2.cpp"
 void func2(int n)
 {
 int i;

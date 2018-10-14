@@ -23,8 +23,8 @@ void level1()
 			if(strcmp(a,"reference"))
 			{
 				printf("you can go to next level\n");
+				return;
 			}
-			 return;
 		case 2:  printf("who is father of AI\n");
 			for(i=0;i<12;i++)
 			{
@@ -33,8 +33,8 @@ void level1()
 
 			if(strcmp(b,"johnmaccarthy"))
 			{       printf("you can go to level 2\n");
-			}
 			return;
+			}
 	}
 
 getch();
